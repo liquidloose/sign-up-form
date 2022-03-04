@@ -127,3 +127,36 @@ input:focus {
   border: 1px solid blue;
   box-shadow: 0 0 10px #719ece;
 }
+@media screen and (max-width: 822px) {
+  #main-container {
+    flex-direction: column;
+  }
+  #left-main {
+    width: 100vw;
+  }
+  #right-main {
+    width: 100vw;
+  }
+  #statement {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-grow: 4;
+    margin: auto;
+    padding: 10px;
+  }
+  #form {
+    flex-direction: column;
+    font-size: 0.7rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    background-color: white;
+    flex-grow: 4;
+    box-shadow: 0px 5px 10px rgb(128, 128, 128, 0.2);
+    justify-content: center;
+    align-items: center;
+    padding-left: 3vw;
+  }
+}

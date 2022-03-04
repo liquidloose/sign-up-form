@@ -12,93 +12,99 @@
   <body>
     <div id="main-container">
       <div id="left-main">
+
         <div id="banner">
           <img src="odin-lined.png" alt="odin image" /><span>Odin</span>
         </div>
-        <div id="footer"><p>Photo by Halie West on Unsplash</p></div>
-      </div>
 
-      <div id="right-main">
-        <div id="statement">
-          <p>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <em>now</em> to get started.
-          </p>
-          <p>You <em>know</em> you want to.</p>
+        <div id="footer">
+          <p>Photo by Halie West on Unsplash</p></div>
         </div>
+
+        <div id="right-main">
+          <div id="statement">
+            <p>
+              This is not a real online service! You know you need something like
+              this in your life to help you realize your deepest dreams. Sign up
+              <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+          </div>
 
         <div id="form">
-          <div #form-header><h1>Let's do this!</h1></div>
+          <div #form-header>
+            <h1>Let's do this!</h1>
+          </div>
 
           
-          <form action="#" method="get"></form>
-          <div id="top-form">
-            <div class="form-spacing">
-              <label for="name">FIRST NAME</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-spacing">
-              <label for="name">LAST NAME</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-          </div>
+            <form action="#" method="get">
+              <div id="top-form">
+                <div class="form-spacing">
+                  <label for="name">FIRST NAME</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-spacing">
+                  <label for="name">LAST NAME</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+              </div>
 
-          <div id="middle-form">
-            <div class="form-spacing">
-              <label for="email">EMAIL</label>
-              <input
-                type="email"
-                id="email"
-                pattern=".+@globex\.com"
-                required
-              />
-            </div>
-            <div class="form-spacing">
-              <label for="phone">PHONE NUMBER</label>
-              <input
-                placeholder="xxx-xxx-xxxx"
-                type="tel"
-                id="phone"
-                name="phone"
-                minlength="8"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required
-              />
-            </div>
-          </div>
+              <div id="middle-form">
+                <div class="form-spacing">
+                  <label for="email">EMAIL</label>
+                    <input
+                      type="email"
+                      id="email"
+                      pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+                      required
+                    />
+                </div>
 
-          <div id="bottom-form">
-            <div class="form-spacing">
-              <label for="pass">PASSWORD</label>
-              <input
-                type="password"
-                id="pass"
-                name="password"
-                minlength="8"
-                required
-              />
-            </div>
+                <div class="form-spacing">
+                  <label for="phone">PHONE NUMBER</label>
+                    <input
+                      placeholder="xxx-xxx-xxxx"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      minlength="8"
+                      pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                      required
+                    />
+                </div>
+              </div>
 
-            <div class="form-spacing">
-              <label for="pass">CONFIRM PASSWORD</label>
-              <input
-                type="password"
-                id="pass"
-                name="password"
-                minlength="8"
-                required
-              />
-            </div>
-          </div>
+              <div id="bottom-form">
+                <div class="form-spacing">
+                  <label for="pass">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="pass"
+                    name="password"
+                    minlength="8"
+                    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+                    required
+                  />
+                </div>
+
+                <div class="form-spacing">
+                  <label for="pass">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    id="pass"
+                    name="password"
+                    minlength="8"
+                    required
+                  />
+                </div>
+              </div>
 
 
 
 
-        </div>
-        <div id="create-account">
-          <button type="submit">Account</button>
-        </form>
+          <div id="create-account">
+            <button type="submit">Account</button>
+          </form>
         
             <div>
               <p>Already have an account? <a href="#">Log in</a></p>
